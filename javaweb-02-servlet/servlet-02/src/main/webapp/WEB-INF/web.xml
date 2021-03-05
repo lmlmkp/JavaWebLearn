@@ -25,4 +25,14 @@
         <servlet-name>getc</servlet-name>
         <url-pattern>/getc</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getProp</servlet-name>
+        <servlet-class>com.lmkp.servlet.getPropServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getProp</servlet-name>
+        <url-pattern>/getProp</url-pattern>
+    </servlet-mapping>
+
 </web-app>
