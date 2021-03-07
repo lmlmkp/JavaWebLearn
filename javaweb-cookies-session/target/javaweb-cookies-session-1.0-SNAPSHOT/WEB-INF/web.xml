@@ -55,4 +55,10 @@
         <servlet-name>session03</servlet-name>
         <url-pattern>/s3</url-pattern>
     </servlet-mapping>
+
+<!--    设置session默认消失时间-->
+    <session-config>
+<!--        15分钟后自动失效-->
+        <session-timeout>15</session-timeout>
+    </session-config>
 </web-app>
