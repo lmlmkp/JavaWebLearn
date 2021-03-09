@@ -4,7 +4,6 @@ import org.junit.Test;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class JdbcTest3 {
@@ -13,9 +12,9 @@ public class JdbcTest3 {
     public void test(){
         // 配置信息
         // useUnicode=true&characterEncoding=utf-8 解决中文乱码问题
-        String url = "jdbc:mysql://119.23.252.239:3306/ashen_db?useUnicode=true&characterEncoding=utf-8";
+        String url = "jdbc:mysql://127.0.0.1:3306/ashen_db?useUnicode=true&characterEncoding=utf-8";
         String username = "root";
-        String password = "Lm0515kp(lmkp)";
+        String password = "lmkp";
 
         Connection connection = null;
 
