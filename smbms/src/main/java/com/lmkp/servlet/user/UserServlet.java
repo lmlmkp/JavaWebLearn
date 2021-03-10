@@ -1,10 +1,13 @@
 package com.lmkp.servlet.user;
 
 import com.alibaba.fastjson.JSONArray;
+import com.lmkp.pojo.Role;
 import com.lmkp.pojo.User;
+import com.lmkp.service.role.RoleServiceImpl;
 import com.lmkp.service.user.UserService;
 import com.lmkp.service.user.UserServiceImpl;
 import com.lmkp.util.Constants;
+import com.lmkp.util.PageSupport;
 import com.mysql.jdbc.StringUtils;
 
 import javax.servlet.ServletException;
@@ -14,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashMap;
+import java.util.List;
 
 // 实现servlet复用
 public class UserServlet extends HttpServlet {
@@ -25,9 +29,9 @@ public class UserServlet extends HttpServlet {
             updatePwd(req,resp);
         }else if (method.equals("pwdmodify")&&method!=null){
             pwdmodify(req,resp);
+        }else if (method.equals("query")&&method!=null){
+            query(req,resp);
         }
-
-
 
     }
 
@@ -36,6 +40,71 @@ public class UserServlet extends HttpServlet {
         doGet(req, resp);
     }
 
+
+    public void query(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        // 查询用户列表
+
+        // 从前端获取数据
+        String queryname = req.getParameter("queryUserName");
+        String temp = req.getParameter("queryUserRole");
+        String pageIndex = req.getParameter("pageIndex");
+        int queryUserRole = 0;
+
+        // 获取用户列表
+        UserService userService = new UserServiceImpl();
+
+        // 第一次走是第一页，页面大小固定
+        int pageSize = 5; // 可以写到配置文件里，方便后期修改
+        int currentPageNo = 1;
+
+
+        if (queryname == null) {
+            queryname = "";
+        }
+        if (temp != null && !temp.equals("")) {
+            queryUserRole = Integer.parseInt(temp);
+        }
+        if (pageIndex != null) {
+            currentPageNo = Integer.parseInt(pageIndex);
+        }
+
+        // 获取用户总数(分页：上一页，下一页)
+        int totalCount = userService.getUserCount(queryname, queryUserRole);
+        // 总页数支持
+        PageSupport pageSupport = new PageSupport();
+        pageSupport.setCurrentPageNo(currentPageNo);
+        pageSupport.setPageSize(pageSize);
+        pageSupport.setTotalCount(totalCount);
+        //int totalPageCount = (int)(totalCount/pageSize)+1;
+        int totalPageCount = pageSupport.getTotalPageCount();
+
+        // 控制首页和尾页
+        // 如果页面要小于1了，就显示第一页的东西
+        if (totalPageCount<1){
+            currentPageNo = 1;
+        }else if (currentPageNo>totalPageCount){
+            currentPageNo = totalPageCount;
+
+        }
+
+        // 获取用户列表展示
+        List<User> userList = userService.getUserList(queryname, queryUserRole, currentPageNo, pageSize);
+        req.setAttribute("userList",userList);
+
+        RoleServiceImpl roleService = new RoleServiceImpl();
+        List<Role> roleList = roleService.getRoleList();
+        req.setAttribute("roleList",roleList);
+
+        req.setAttribute("totalCount",totalCount);  // 用户总数
+        req.setAttribute("currentPageNo",currentPageNo); // 当前页码
+        req.setAttribute("totalPageCount",totalPageCount); // 总页数
+        req.setAttribute("queryUserName",queryname);
+        req.setAttribute("queryUserRole",queryUserRole);
+        // 返回前端
+        req.getRequestDispatcher("userlist.jsp").forward(req,resp);
+
+    }
     // 修改密码
     public void updatePwd(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // 从session获取id

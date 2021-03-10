@@ -32,7 +32,7 @@
              <ul class="list">
                  <li ><a href="${pageContext.request.contextPath }/jsp/billlist.jsp">订单管理</a></li>
               <li><a href="${pageContext.request.contextPath }/jsp/providerlist.jsp">供应商管理</a></li>
-              <li><a href="${pageContext.request.contextPath }/user?method=query">用户管理</a></li>
+              <li><a href="${pageContext.request.contextPath }/jsp/user?method=query">用户管理</a></li>
               <li><a href="${pageContext.request.contextPath }/jsp/pwdmodify.jsp">密码修改</a></li>
               <li><a href="${pageContext.request.contextPath }/jsp/rolelist.jsp">角色管理</a></li>
               <li><a href="${pageContext.request.contextPath }/jsp/toLogout">退出系统</a></li>
