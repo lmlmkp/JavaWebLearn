@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:javaWeb" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin2" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ae6631d4-5680-4c77-ac91-9ec2ac31cb07" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\environment\apache-maven-3.6.3\maven-repo" />
+        <option name="mavenHome" value="D:\environment\apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\environment\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1plvBxBX1CELI69gc83pKqSPdMH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../javahomework" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.lmkp.dao" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lmkp.dao" />
+      <recent name="com.lmkp.pojo" />
+      <recent name="com.lmkp.pojo.java.com.lmkp.pojo" />
+      <recent name="com.lmkp.utils" />
+      <recent name="dao" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ideaworks\javaWeb\Mybatis-study\mybatis-03\src\main\resources" />
+      <recent name="E:\ideaworks\javaWeb\Mybatis-study\mybatis-03\src\main\java\com\lmkp\dao" />
+      <recent name="E:\ideaworks\javaWeb\Mybatis-study\mybatis-02\src\main\java\com\lmkp\pojo" />
+      <recent name="E:\ideaworks\javaWeb\Mybatis-study\mybatis-02\src\main\java\com\lmkp\dao" />
+      <recent name="E:\ideaworks\javaWeb\Mybatis-study\mybatis-02\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.UerDaoTest.getUserById (1)">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UerDaoTest.getUserById (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lmkp.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lmkp.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.lmkp.dao.UerDaoTest" />
+      <option name="METHOD_NAME" value="getUserById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UerDaoTest.getUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lmkp.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lmkp.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.lmkp.dao.UerDaoTest" />
+      <option name="METHOD_NAME" value="getUserById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UerDaoTest.getUserLike" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lmkp.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lmkp.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.lmkp.dao.UerDaoTest" />
+      <option name="METHOD_NAME" value="getUserLike" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UerDaoTest.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lmkp.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lmkp.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.lmkp.dao.UerDaoTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UerDaoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lmkp.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lmkp.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.lmkp.dao.UerDaoTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UerDaoTest.getUserById (1)" />
+        <item itemvalue="JUnit.UerDaoTest.test" />
+        <item itemvalue="JUnit.UerDaoTest.getUserById" />
+        <item itemvalue="JUnit.UerDaoTest.test (1)" />
+        <item itemvalue="JUnit.UerDaoTest.getUserLike" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae6631d4-5680-4c77-ac91-9ec2ac31cb07" name="Default Changelist" comment="" />
+      <created>1615770361665</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615770361665</updated>
+      <workItem from="1615770362719" duration="22207000" />
+      <workItem from="1615861713083" duration="4759000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="511" y="0" key="#Project_Structure" timestamp="1615773091794">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="511" y="0" key="#Project_Structure/0.0.1549.831@0.0.1549.831" timestamp="1615773091794" />
+    <state x="367" y="74" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615775004355">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="367" y="74" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1549.831@0.0.1549.831" timestamp="1615775004355" />
+    <state x="940" y="190" key="#com.intellij.ide.util.MemberChooser" timestamp="1615863340092">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="940" y="190" key="#com.intellij.ide.util.MemberChooser/0.0.1549.831@0.0.1549.831" timestamp="1615863340092" />
+    <state x="753" y="314" width="454" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1615773203252">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="753" y="314" width="454" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1549.831@0.0.1549.831" timestamp="1615773203252" />
+    <state x="660" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615778000971">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="660" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1549.831@0.0.1549.831" timestamp="1615778000971" />
+    <state x="505" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615862239186">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="505" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1549.831@0.0.1549.831" timestamp="1615862239186" />
+    <state x="529" y="233" key="FileChooserDialogImpl" timestamp="1615889845989">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="529" y="233" key="FileChooserDialogImpl/0.0.1549.831@0.0.1549.831" timestamp="1615889845989" />
+    <state width="847" height="127" key="GridCell.Tab.0.bottom" timestamp="1615889850209">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="847" height="127" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1615889850209" />
+    <state width="847" height="127" key="GridCell.Tab.0.center" timestamp="1615889850209">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="847" height="127" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1615889850209" />
+    <state width="847" height="127" key="GridCell.Tab.0.left" timestamp="1615889850209">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="847" height="127" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1615889850209" />
+    <state width="847" height="127" key="GridCell.Tab.0.right" timestamp="1615889850209">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="847" height="127" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1615889850209" />
+    <state width="213" height="477" key="HiddenNamespacesPopup" timestamp="1615774860760">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="213" height="477" key="HiddenNamespacesPopup/0.0.1549.831@0.0.1549.831" timestamp="1615774860760" />
+    <state x="317" y="121" key="SettingsEditor" timestamp="1615770543310">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="317" y="121" key="SettingsEditor/0.0.1549.831@0.0.1549.831" timestamp="1615770543310" />
+    <state x="179" y="76" key="new project wizard" timestamp="1615889847698">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="179" y="76" key="new project wizard/0.0.1549.831@0.0.1549.831" timestamp="1615889847698" />
+    <state x="758" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1615778290133">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="758" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1549.831@0.0.1549.831" timestamp="1615778290133" />
+  </component>
+</project>

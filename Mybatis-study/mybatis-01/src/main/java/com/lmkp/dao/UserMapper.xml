@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace=绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="com.lmkp.dao.UserMapper">
+
+    <!--select查询语句-->
+    <select id="getUserList" resultType="com.lmkp.pojo.User">
+       select * from user
+   </select>
+    <select id="getUserLike" resultType="com.lmkp.pojo.User">
+       select * from user where username like #{value}
+   </select>
+
+    <select id="getUserByID" parameterType="int" resultType="com.lmkp.pojo.User">
+    select * from user where id = #{id}
+   </select>
+    <select id="getUser" parameterType="map" resultType="com.lmkp.pojo.User">
+    select * from user where id = #{id} and username = #{name}
+   </select>
+
+
+
+    <!-- 对象中的属性，可以直接取出来 -->
+    <insert id="addUser" parameterType="com.lmkp.pojo.User">
+        insert into user(id,username,password) values (#{id},#{username},#{password})
+    </insert>
+    <insert id="addUser2" parameterType="map">
+        insert into user(id,username,password) values (#{id},#{name},#{pwd})
+    </insert>
+
+
+    <update id="updateUser" parameterType="com.lmkp.pojo.User">
+        update user set username = #{username},password = #{password} where id = #{id}
+    </update>
+
+    <delete id="deleteUser" parameterType="int">
+        delete from user where id = #{id}
+    </delete>
+</mapper>

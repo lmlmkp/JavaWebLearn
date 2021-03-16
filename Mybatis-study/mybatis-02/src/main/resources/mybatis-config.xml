@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--configuration核心配置文件-->
+<configuration>
+
+<!--    引入外部配置文件-->
+    <properties resource="db.properties" />
+
+<!-- 给实体类起别名-->
+    <typeAliases>
+<!--        第一种,直接起别名-->
+        <typeAlias type="com.lmkp.pojo.User" alias="User"/>
+<!--        第二种,扫描包下的javaBean,别名为JavaBean首字母小写,也可以通过@Alias在JavaBean上添加别名-->
+        <package name="com.lmkp.pojo"/>
+    </typeAliases>
+
+
+    <environments default="test">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/ashen_db?useSSL=true&amp;useUnicode=true&amp;characterEncoding=UTF8"/>
+                <property name="username" value="root"/>
+                <property name="password" value="lmkp"/>
+            </dataSource>
+        </environment>
+
+        <environment id="test">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <mapper resource="com/lmkp/dao/UserMapper.xml"/>
+    </mappers>
+
+</configuration>
